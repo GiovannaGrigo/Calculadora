@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native';
 import Botao from './components/Botao';
+import Visor from './components/Visor';
 
 export default function App() {
   return (
     <View style={styles.container}>
-
+      <Visor />
       <View style={styles.botoes}> 
         <Botao label="AC" triplo/>
         <Botao label="/" operacao/>
@@ -36,7 +37,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#6b6b6b',
     alignItems: 'center',
     justifyContent: 'flex-end',
   },
