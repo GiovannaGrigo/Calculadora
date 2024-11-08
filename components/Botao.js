@@ -11,7 +11,7 @@ const Botao = (props) => {
 
     return (
         <TouchableHighlight
-            onPress={() => console.log(`clicou no botão ${props.label}`)}>
+            onPress={() => props.onClick(props.label)}>
             <Text style={estilosBotao}>
                 {props.label}
             </Text>
