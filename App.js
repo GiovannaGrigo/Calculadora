@@ -26,7 +26,7 @@ let estadoTemp = {
 
 export default function App() {
 
-  const [estadoCalculadora, setEstadoCalculadora] = useState({...estadoInicial})
+  const [estadoCalculadora, setEstadoCalculadora] = useState({...estadoInicial}) // "..." faz um clone 
 
   adicionarDigito = n => {
     if(n === '.' && estadoCalculadora.valorVisor.includes('.')){
